@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<!-- Prep for mobile devices --!>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load the stylesheet --!>
+<link rel="stylesheet" type="text/css" href="stylebase.css" />
+<!-- Stylesheet for mobile devicse --!>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)" href="stylefullsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)" href="stylemidsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="stylemobile.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px) and (max-device-width: 480px)" href="stylemobile.css" />
+<!-- Google font sheet --!>
+<link href='http://fonts.googleapis.com/css?family=Exo+2:400,300,200' rel='stylesheet' type='text/css'>
+
+<!-- Metadata --!>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Kevin Claytor</title>
+<meta name="author" content="Kevin Claytor">
+<meta name="keywords" content="kevin, claytor, programs, matlab, program, download, tracking, nanocar, cell, colony, counting">
+<meta name="description" content="Kevin Claytor's academic webpage with research, publications, software, and outreach.">
+<meta name="robots" content="all">
+</head>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-6966263-2");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Google Analytics -->
+
+<body>
+<div class="wrapper">
+    <div class="banner">
+<h1 class="in-page-title">Kevin Claytor: nonlinear</h1>
+<h1 class="in-page-title-basic">Kevin Claytor</h1>
+    </div>
+    <div class="navbar">
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <ul class="navsub">
+        <li><a href="toblerone.html">Toblerone Clock</a></li>
+        <li><a href="nonlinear.html">Nonlinear Legos</a></li>
+        <li><a href="tangicode.html">Tangicode</a></li>
+    </ul>
+    <li><a href="programs.html">Programs/Code</a></li>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="docs/ClaytorCV.pdf" target="_blank">CV/Resume</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+    </div>
+    <div class="content">
+<p><center><h2>Nonlinear Oscillator</h2></center></p><hr>
+<p>One of the coolest things that I like about physics is how accessible it can be with some fairly simple experiments. 
+ Here I've built a driven pendulum out of Legos.
+ The drive arm is connected to the oscillator via a rubber band.
+ The oscillator arm itself is damped through the friction of the LEGOs.</p>
+<p>Despite its relative simplicity, we can observe some fairly complicated behavior, such as bifurcation 
+(different behavior for the same conditions).
+ For small displacements of the drive arm, the rubber band applies a linear force and the oscillator arm follows it exactly.
+ But when the drive amplitude increases the rubber band provides a nonlinear force and more complicated behavior ensues.
+ First, it goes through resonance, where the amplitude of the oscillator arm increases with the frequency of the drive arm as the frequency increases up to resonance.
+ After this point, although the frequency of the drive arm continues to increase the oscillator arm amplitude does not.
+ Additionally, it exhbiits bifurcation:
+ At a frequency near resonance the amplitude of the driven oscillator can be different depending if you have reached that point by;
+increasing or decreasing the frequency.
+</p>
+<p>You're welcome to download the <a href="docs/Claytor_NonlinearOscillator.pdf">full report</a>.
+ As well as the <a href="mfiles/nonlinear/VideoAnalysis.m">video analysis code</a>,
+ and a pair of Mathematica analysis files (<a href="mfiles/nonlinear/Analysis.nb">one</a> and
+<a href="mfiles/nonlinear/ProjectSimulations.nb">two</a>).
+</p>
+<p>Here's a video of it running at a specific frequency.</p>
+<div class="video-wrapper">
+    <div class="video-container">
+        <iframe width="420" height="315" src="//www.youtube.com/embed/c9dRzkTv5jc" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<p>
+Here are some processing images so you can see how it is done (thrsholding and following the green dot).
+<br/> <img src="images/nonlinear/processing1.jpg"></img>
+<br/>We isolate the region of interest (ROI).
+<br/> <img src="images/nonlinear/processing2.jpg"></img>
+<br/>Just the green channel of the ROI (I later learned that [RGB -0.5*R -0.5*B] is a better way of obtaining green color information).
+<br/> <img src="images/nonlinear/processing3.jpg"></img>
+<br/>Adjusting for full dynamic range.
+<br/> <img src="images/nonlinear/processing4.jpg"></img>
+<br/>A threshold allows us to isolate the marker.
+<br/> <img src="images/nonlinear/processing5.jpg"></img>
+<br/>Finally we have the location of the markers in all the frames.
+<br/> <img src="images/nonlinear/dampeddata.jpg"></img>
+<br/>Here's an example of the quality of the data you can extract from this simple setup.
+</p>
+    </div>
+    <div class="photobar">
+        <img class="photo" src="images/portrait.jpg" width="400px"></img>
+    </div>
+    <div class="contactbar">
+<ul class="contact-list">
+    <li><a href="http://www.duke.edu/"><img src="images/connect/duke_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.aps.org/"><img src="images/connect/aps_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.rice.edu/"><img src="images/connect/rice_blue.gif" width="50"/></a></li>
+    <li><a href="https://github.com/KEClaytor"><img src="images/connect/git_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.linkedin.com/in/kevinclaytor"><img src="images/connect/linkedin_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.twitter.com/keclaytor"><img src="images/connect/twitter_blue.gif" width="50"/></a></li>
+    <li><a href="https://plus.google.com/+KevinClaytor/posts"><img src="images/connect/gplus_blue.gif" width="50"/></a></li>
+</ul>
+    </div>
+</div>
+</body>
+</html>

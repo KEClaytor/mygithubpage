@@ -1,0 +1,181 @@
+/* stylebase.css
+ *
+ * This is the basic stylesheet
+ * override specific options 
+ * with the screen-size
+ * stylesheets.
+ * */
+
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,300,200);
+@font-face {
+    font-family: NavFont; /*a name to be used later*/
+    src: url("fonts/ExoThin.otf") format("opentype");
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+/* Make images scale to 100% width */
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Tip for rescaling videos to fit
+ * hat-tip to http://webdesignerwall.com/tutorials/css-elastic-videos
+ */
+.video-wrapper {
+    width: 600px;
+    max-width: 100%;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* show borders for debugging */
+/* SUPER USEFUL! */
+// div {border: 1px dotted gray; padding: 0;}
+
+/* Main Title over imagebar */
+h1 {
+    color: white;
+    font-size: 3.0em;
+    margin: 0;
+    padding: 0;
+}
+/* In-page header */
+h2 {color: #B50000;
+    font-size: 3.0em;
+    margin: 0;
+    padding: 0;
+}
+/* sub-headers */
+h3 {color: #B50000;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+//hr {color:#7B4500}
+
+/* Main div sections */
+.wrapper {
+    margin: 0px auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 100px;
+    background-image: url("images/bannermain.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    font-family: 'Exo 2', serif;
+    z-index:10;
+}
+.in-page-title-basic {
+    display: none;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.photobar {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    z-index: 7;
+}
+
+.contactbar {
+    position: relative;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    z-index: 6;
+}
+.contact-list {
+    margin: 0;
+    padding: 10px;
+}
+.contact-list ul {
+    display: inline;
+    list-style-type: none;
+}
+.contact-list li{
+    display: inline;
+}
+
+/* Navigation List Setup */
+.navbar {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: left;
+    font-family: 'Exo 2', sans-serif;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.navbar li a{
+    color:#FFFFFF;
+}
+.navbar li a:visited{
+    color:#FFFFFF;
+}
+.navbar li a:hover{
+    color:#3F577F;
+}
+
+/* Define offsets and font sizes for nesting */
+.nav li{
+    width: 100%;
+    font-size: 1.5em;
+}
+.navsub li {
+    padding-left: 20px;
+    width: 90%;
+    font-size: 1.2em;
+}
+.navsubsub li {
+    padding-left: 40px;
+    width: 80%;
+    font-size: 1.0em;
+}
+

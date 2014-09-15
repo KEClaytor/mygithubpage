@@ -1,0 +1,42 @@
+/* Full size style sheet overriddes */
+/* show borders for debugging */
+/* SUPER USEFUL! */
+
+.banner {
+    position: fixed;
+}
+
+.content {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    right: 400px;
+}
+
+.photobar {
+    position: fixed;
+    top: 100px;
+    left: auto;
+    right: 0px;
+    width: 400px;
+}
+
+.contactbar {
+    position: fixed;
+    top: 500px;
+    left: auto;
+    right: 0px;
+    width: 400px;
+    bottom: 0px;
+}
+
+/* Navigation List Setup */
+.navbar {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    min-width: 200px;
+    width: auto;
+    bottom: 0px;
+}
+

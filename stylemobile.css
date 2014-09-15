@@ -1,0 +1,67 @@
+/* Mobile site overrides */
+
+/* In-page header */
+h2 {color: #B50000;
+    font-size: 2.0em;
+    margin: 0;
+    padding: 0;
+}
+/* in-page sub-headers */
+h3 {color: #B50000;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main div sections */
+/* Remove the banner on the mobile site */
+.banner {
+    padding-left: 0px;
+}
+.in-page-title {
+    display: none;
+}
+.in-page-title-basic {
+    display: inline;
+}
+
+.content {
+}
+
+/* Hide the photobar on small screens */
+.photobar {
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* Put at the bottom of the screen */
+.contactbar {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+/* switch to an inline navbar */
+.navbar {
+    width: 100%;
+}
+
+.navbar ul {
+    display: inline;
+}
+.navbar li {
+    display: inline;
+}
+
+/* Remove sub-menus for mobile */
+.nav li{
+    font-size: 1.2em;
+}
+.navsub li {
+    display: none;
+}
+.navsubsub li {
+    display: none;
+}
+

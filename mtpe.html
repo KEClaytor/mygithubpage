@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<!-- Prep for mobile devices --!>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load the stylesheet --!>
+<link rel="stylesheet" type="text/css" href="stylebase.css" />
+<!-- Stylesheet for mobile devicse --!>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)" href="stylefullsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)" href="stylemidsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="stylemobile.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px) and (max-device-width: 480px)" href="stylemobile.css" />
+<!-- Google font sheet --!>
+<link href='http://fonts.googleapis.com/css?family=Exo+2:400,300,200' rel='stylesheet' type='text/css'>
+
+<!-- Metadata --!>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Kevin Claytor</title>
+<meta name="author" content="Kevin Claytor">
+<meta name="keywords" content="kevin, claytor, programs, matlab, program, download, tracking, nanocar, cell, colony, counting">
+<meta name="description" content="Kevin Claytor's academic webpage with research, publications, software, and outreach.">
+<meta name="robots" content="all">
+</head>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-6966263-2");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Google Analytics -->
+
+<body>
+<div class="wrapper">
+    <div class="banner">
+<h1 class="in-page-title">Kevin Claytor: mtpe</h1>
+<h1 class="in-page-title-basic">Kevin Claytor</h1>
+    </div>
+    <div class="navbar">
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="programs.html">Programs/Code</a></li>
+    <ul class="navsub">
+        <li><a href="python.html">Python</a></li>
+        <li><a href="mathematica.html">Mathematica</a></li>
+        <li><a href="matlab.html">Matlab</a></li>
+        <ul class="navsubsub">
+            <li><a href="colony.html">Colony Counter</a></li>
+            <li><a href="sms.html">Single Molecule</a></li>
+            <li><a href="pmspace.html">PM Space Sim</a></li>
+            <li><a href="sudoku.html">Sudoku Solver</a></li>
+            <li><a href="othello.html">Othello</a></li>
+            <li><a href="connect.html">Connect Four</a></li>
+            <li><a href="mtpe.html">MTPE Warp</a></li>
+        </ul>
+    </ul>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="docs/ClaytorCV.pdf" target="_blank">CV/Resume</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+    </div>
+    <div class="content">
+<p><center><h2>MPTE Dome Converter Page</h2></center></p><hr>
+<p>A little page to put up stuff related to the MTPE project I'm working on.  The status of the main GUI is as follows;
+<br>--Functional batch processor
+<br>--Batch Processing from mid-Sequence
+<br>--Functional option selection
+<br>--Functional full image resizer
+<br>--Functional full image cropper and resizer
+<p><a href=mfiles/MTPEWarp.m>MTPE Dome Converter</a> -- Under development and subject to change
+<br><a href=mfiles/MTPEWarpR5.m>Revision 5</a> -- Old versions
+<br><a href=mfiles/MTPEWarpR4.m>Revision 4</a>
+<p><a href="MTPEUserGuide.pdf">User's Guide and Manual</a> -- Being Written.
+<p>I was also asked to write a second GUI which applies the batch processor from the first to a dedicated cropping / trimming application.
+<br>I realize that I could have just written it into MTPEWarp, and indeed tried this, however, things were getting just a might too confusing in there with it as well, so it took on life as a spin-off.  It's status is as follows;
+<br>--Functional batch processor
+<br>--Batch Processing from mid-Sequence
+<br>--Functional inner image cropper
+<p><a href=mfiles/MTPETrim.m><font class="lightbg">MTPE Trimmer</font></a> -- Under development and subject to change
+<br><a href=mfiles/trimdemo.jpg><font class="lightbg">Accessory file</font></a> -- Required for the preview image to display.
+<br>A note on installation; save both the .m file and the image to the same folder.  It is recommended you not put the image with the other images you are going to convert.
+`	<br>
+<p><img src="images/mtpe_gui_6.jpg">
+<br>Revision 6 - Fixed a minor bug in the preview that wasn't acutally rendering it until it had finished the transform, and added titles.
+<br>Revision 5 - The preview images now appear at the beginning of the transform sequence.
+<br>Revision 4 - One can now start conversions from the middle of a sequence using the Offset feature
+<br>Revision 3 - GUI has been updated again but with the crop and resize feature.
+<br>Revision 2 - A newer version of the GUI.  In addition to allowing easy batch processing of great numbers of files, this one sports a fully functional resize feature.  Coming soon - a crop and resize!
+<br>Revision 1 - An image displaying the current status of the GUI.  Currently capable of reading in, transforming, and saving multiple files.
+<hr>
+<p><img src="images/mtpe_trm_1.jpg">
+<br>Revision 3 - A more directed program that is meant as an accessory to MTPEWarp.  This Trimming program takes images before they are dome masters - when they have extra black space - and trims the excess off of them.  Again, the main advantage here is the batch processor.
+    </div>
+    <div class="photobar">
+        <img class="photo" src="images/portrait.jpg" width="400px"></img>
+    </div>
+    <div class="contactbar">
+<ul class="contact-list">
+    <li><a href="http://www.duke.edu/"><img src="images/connect/duke_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.aps.org/"><img src="images/connect/aps_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.rice.edu/"><img src="images/connect/rice_blue.gif" width="50"/></a></li>
+    <li><a href="https://github.com/KEClaytor"><img src="images/connect/git_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.linkedin.com/in/kevinclaytor"><img src="images/connect/linkedin_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.twitter.com/keclaytor"><img src="images/connect/twitter_blue.gif" width="50"/></a></li>
+    <li><a href="https://plus.google.com/+KevinClaytor/posts"><img src="images/connect/gplus_blue.gif" width="50"/></a></li>
+</ul>
+    </div>
+</div>
+</body>
+</html>

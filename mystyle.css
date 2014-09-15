@@ -1,0 +1,165 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,300,200);
+@font-face {
+    font-family: NavFont; /*a name to be used later*/
+    src: url("fonts/ExoThin.otf") format("opentype");
+}
+
+body {
+    background-color:white;
+    margin:0;
+    padding:0;
+    font-size: 100%;
+}
+
+/* show borders for debugging */
+/* SUPER USEFUL! */
+//div {border: 1px dotted gray; padding: 0}
+
+/* Main Title over imagebar */
+h1 {
+    color: white;
+    font-size: 3.0em;
+    margin: 0;
+    padding: 0;
+}
+/* In-page header */
+h2 {color: #B50000;
+    font-size: 3.0em;
+    margin: 0;
+    padding: 0;
+}
+/* sub-headers */
+h3 {color: #B50000;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+//hr {color:#7B4500}
+
+/* Main div sections */
+#wrapper {
+    margin: 0px auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+#banner {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 100px;
+    background-image: url("images/bannermain.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    font-family: 'Exo 2', serif;
+    z-index:10;
+}
+
+.nav {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    width: 200px;
+    bottom: 0px;
+    margin: 0;
+    padding-left: 10px;
+    background-color:#000000;
+    text-align:left;
+    font-family: 'Exo 2', sans-serif;
+}
+.nav li a{
+    color:#FFFFFF;
+}
+.nav li a:hover{
+    color:#3F577F;
+}
+.nav li a:visited{
+    color:#FFFFFF;
+}
+
+#content {
+    position: absolute;
+    top: 100px;
+    left: 220px;
+    right: 400px;
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    z-index: 5;
+}
+
+#photo {
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    z-index: 7;
+}
+
+#contactbar {
+    position: fixed;
+    top: 500px;
+    right: 0px;
+    width: 400px;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    z-index: 6;
+}
+
+/* Navigation List Setup */
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.nav li{
+    margin: 0;
+    padding: 0;
+    border-top: 0;
+    width: 100%;
+    display: block;
+    font-size: 1.5em;
+}
+
+.navsub ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.navsub li {
+    margin: 0;
+    padding-left: 20px;
+    border-top: 0;
+    width: 90%;
+    display: block;
+    font-size: 1.2em;
+}
+
+.navsubsub ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.navsubsub li {
+    margin: 0;
+    padding-left: 40px;
+    border-top: 0;
+    width: 80%;
+    display: block;
+    font-size: 1.0em;
+}

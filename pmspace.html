@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<!-- Prep for mobile devices --!>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load the stylesheet --!>
+<link rel="stylesheet" type="text/css" href="stylebase.css" />
+<!-- Stylesheet for mobile devicse --!>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)" href="stylefullsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)" href="stylemidsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="stylemobile.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px) and (max-device-width: 480px)" href="stylemobile.css" />
+<!-- Google font sheet --!>
+<link href='http://fonts.googleapis.com/css?family=Exo+2:400,300,200' rel='stylesheet' type='text/css'>
+
+<!-- Metadata --!>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Kevin Claytor</title>
+<meta name="author" content="Kevin Claytor">
+<meta name="keywords" content="kevin, claytor, programs, matlab, program, download, tracking, nanocar, cell, colony, counting">
+<meta name="description" content="Kevin Claytor's academic webpage with research, publications, software, and outreach.">
+<meta name="robots" content="all">
+</head>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-6966263-2");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Google Analytics -->
+
+<body>
+<div class="wrapper">
+    <div class="banner">
+<h1 class="in-page-title">Kevin Claytor: pmspace</h1>
+<h1 class="in-page-title-basic">Kevin Claytor</h1>
+    </div>
+    <div class="navbar">
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="programs.html">Programs/Code</a></li>
+    <ul class="navsub">
+        <li><a href="python.html">Python</a></li>
+        <li><a href="mathematica.html">Mathematica</a></li>
+        <li><a href="matlab.html">Matlab</a></li>
+        <ul class="navsubsub">
+            <li><a href="colony.html">Colony Counter</a></li>
+            <li><a href="sms.html">Single Molecule</a></li>
+            <li><a href="pmspace.html">PM Space Sim</a></li>
+            <li><a href="sudoku.html">Sudoku Solver</a></li>
+            <li><a href="othello.html">Othello</a></li>
+            <li><a href="connect.html">Connect Four</a></li>
+            <li><a href="mtpe.html">MTPE Warp</a></li>
+        </ul>
+    </ul>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="docs/ClaytorCV.pdf" target="_blank">CV/Resume</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+    </div>
+    <div class="content">
+<p><center><h2>PM Space Simulator</h2></center></p><hr>
+<p><b>Introduction</b>
+<p>This program has expanded far beyond its initial aims.  You can still find the PMDemo - a simple forward model of PMSpace for download here, however, a more complete PMPro version is available for download as well that uses a Monte Carlo method to invert PM space from a stress-strain curve.
+<p>Here's a comparision between the two versions
+<table border="3" cellpadding="0" cellspacing="0" width="620" BGCOLOR="White">
+    <tr valign="top">
+        <td>
+            <center><b>PMDemo</b></center>
+        </td>
+        <td>
+            <center><b>PMPro</b></center>
+        </td>
+    </tr>
+    <tr valign="top">
+        <td>
+            <li>Real tme visualizer of PM space, Stress-strain, and position along the stress curve.
+            <li>Quick testing and prediction of stress protocols
+            <li>Ability to add new PM distributions
+            <li>A Demo mode great for crowd control!
+        </td>
+        <td>
+            <li><b>Inversion to obtain a PM space from a stress-strain curve.</b>  (Uses a Monte Carlo (random shift method))
+            <li>Ability to start with a custom PM distribution for inversion
+            <li>Limited to inverting up-down stress protocols (no inner loops)
+            <li>Forward problem works for all stress protocols
+            <li>Faster testing and prediction of stress protocols
+            <li>Ability to add new PM distributions
+            <li>Ability to save and load PM spaces, stress-strain curves and strain protocols independently
+            <li>View PM space density distribution
+            <li><a href="docs/inversion.avi" target="_blank">View / Download an inversion video</a>
+        </td>
+    </tr>
+</table>
+<p><b>About</b>
+<br><b>PMDemo</b> was written to visualize and help explain the complex inner workings of PM space and the implications of the model, for me to use at the <a href="http://www.lanl.gov/">LANL</a> Student Symposium 2006.  I've also added in a discussion of PM space and how the code works, in the user's guide.
+<br><b>PMPro</b> was written to expand on the capabilities of PMDemo and allow for one to get a feel for what kind of PM spaces simulate experimental data.
+
+<p><b>Download</b>
+<br><b>PMDemo</b>
+<br><a href=mfiles/pmdemo.zip>PMDemo</a> - A zip file with all the functions you will need.  Run PMDemo from the Matlab command prompt.
+<br><a href="docs/PMDemoManual.pdf" target="_blank">Manual and discussion</a> (PDF)
+
+<br><br><b>PMPro</b>
+<br><a href="mcrdownload.html">MCR Installer</a> - The MATLAB component runtime that must be installed <b>before</b> running the program installer.
+<br><a href=exe/PMPro_pkg.exe>PMPro_pkg</a> - The installer for the standalone application
+<br><a href=mfiles/pmpro.zip>PMPro</a> - A zip file with all the functions required.  Run PMPro from the Matlab command prompt.
+
+<br><br><b>Installation</b>
+<br>Download and run the MCRInstaller to install the Matlab Runtime only if you have not done this before.  Then run the installer for the standalone application.  This will create PMPro.exe which will run PMPro.  Alternatively you can download and extract the .zip files to a folder and then run PMDemo or PMPro from the command line.
+
+<p><b>References</b>
+<br>[1]  Equation of state and wave propagation in hysteretic nonlinear elastic materials.  McCall, K.R. and Guyer, R.A.  Journal of Geophysical Research.  (1994).  Vol 99, no. B12.  Pgs (23,877-23,897) (<a href="docs/GuyerMcCall1994.pdf" target="_blank">PDF</a>)
+<br>[2]  Quantitative implementation of Preisach-Mayergoyz space to find static and dynamic elastic moduli in rock.  Guyer, R.A.,McCall, K.R., Boitnott, G.N., Hilbert, L.B., Plona, T.J.  Journal of Geophysical Research.  (1997).  Vol 102, no. B3.  Pgs (5,281-5,293) (<a href="docs/GuyerMcCall1997.pdf" target="_blank">PDF</a>)
+<br>[3]  A new theoretical paradigm to describe hysteresis, discrete memory and nonlinear elastic wave propagation in rock.  Guyer, R.A. and McCall, K.R.  Nonlinear Processes in Geophysics.  (1996).  Vol 5.  Pgs (89-101) (<a href="docs/GuyerMcCall1996.pdf" target="_blank">PDF</a>)
+
+<p><b>Screenshots</b>
+<p><b>PMDemo</b>
+<br><img src="images/pmdemo.jpg">
+<br>An image of the demo GUI in operation on a custom PM space model.
+<p>PMPro</b>
+<br><img src="images/pmpro.jpg">
+<br>A shot of the more flexible PMPro in action.
+    </div>
+    <div class="photobar">
+        <img class="photo" src="images/portrait.jpg" width="400px"></img>
+    </div>
+    <div class="contactbar">
+<ul class="contact-list">
+    <li><a href="http://www.duke.edu/"><img src="images/connect/duke_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.aps.org/"><img src="images/connect/aps_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.rice.edu/"><img src="images/connect/rice_blue.gif" width="50"/></a></li>
+    <li><a href="https://github.com/KEClaytor"><img src="images/connect/git_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.linkedin.com/in/kevinclaytor"><img src="images/connect/linkedin_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.twitter.com/keclaytor"><img src="images/connect/twitter_blue.gif" width="50"/></a></li>
+    <li><a href="https://plus.google.com/+KevinClaytor/posts"><img src="images/connect/gplus_blue.gif" width="50"/></a></li>
+</ul>
+    </div>
+</div>
+</body>
+</html>

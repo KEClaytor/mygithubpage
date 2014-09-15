@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<!-- Prep for mobile devices --!>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load the stylesheet --!>
+<link rel="stylesheet" type="text/css" href="stylebase.css" />
+<!-- Stylesheet for mobile devicse --!>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)" href="stylefullsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)" href="stylemidsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="stylemobile.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px) and (max-device-width: 480px)" href="stylemobile.css" />
+<!-- Google font sheet --!>
+<link href='http://fonts.googleapis.com/css?family=Exo+2:400,300,200' rel='stylesheet' type='text/css'>
+
+<!-- Metadata --!>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Kevin Claytor</title>
+<meta name="author" content="Kevin Claytor">
+<meta name="keywords" content="kevin, claytor, programs, matlab, program, download, tracking, nanocar, cell, colony, counting">
+<meta name="description" content="Kevin Claytor's academic webpage with research, publications, software, and outreach.">
+<meta name="robots" content="all">
+</head>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-6966263-2");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Google Analytics -->
+
+<body>
+<div class="wrapper">
+    <div class="banner">
+<h1 class="in-page-title">Kevin Claytor: sms</h1>
+<h1 class="in-page-title-basic">Kevin Claytor</h1>
+    </div>
+    <div class="navbar">
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="programs.html">Programs/Code</a></li>
+    <ul class="navsub">
+        <li><a href="python.html">Python</a></li>
+        <li><a href="mathematica.html">Mathematica</a></li>
+        <li><a href="matlab.html">Matlab</a></li>
+        <ul class="navsubsub">
+            <li><a href="colony.html">Colony Counter</a></li>
+            <li><a href="sms.html">Single Molecule</a></li>
+            <li><a href="pmspace.html">PM Space Sim</a></li>
+            <li><a href="sudoku.html">Sudoku Solver</a></li>
+            <li><a href="othello.html">Othello</a></li>
+            <li><a href="connect.html">Connect Four</a></li>
+            <li><a href="mtpe.html">MTPE Warp</a></li>
+        </ul>
+    </ul>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="docs/ClaytorCV.pdf" target="_blank">CV/Resume</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+    </div>
+    <div class="content">
+<p><center><h2>Single Molecule Visualizer and Tracker</h2></center></p><hr>
+<p><b>Introduction</b>
+<br>SMS VIS is a program developed to track and identify nanocars using a optical scanning microscope.
+<p><b>Download and Installation</b>
+<p><a href="mcrdownload.html">MCR Installer</a> - The MATLAB component runtime that must be installed <b>before</b> running the program installer.
+<br><a href="exe/SMS_Tracker_pkg.exe">SMS_Tracker_pkg.exe</a> - The installer for the tracking program.
+<br><a href="exe/SampleData.zip">Sample Data</a> - Some sample data to get you started.
+<p><b>Documentation</b>
+<p>The <a href="docs/SMS_VIS_Manual.doc">manual and documentation</a> is available for download.
+<br>You can also <a href="docs/Claytor_RQI.pdf">download the poster</a>.
+<p><img src="images/sms/mainscreen.jpg">
+<br>The main screen.  From this screen you can load up the individual images for analysis.  Once images have been loaded, they are analized for intensity, allowing the user to set cut-offs for target molecules against random noise.  This screen allows for an overview of the key points of the data.  While the data is being processed, it shows the actual image files with an overlay of molecules that will be kept for further analysis.
+<p><img src="images/sms/sr.jpg">
+<br>This is the search radius plot.  This proved to be one of the more useful plots.  It plots points assocaiated as a function of search radius.  If there were immobile particles, there would be a large peak within a few pixels of zero, however, for more mobile samples the peak would shift out, and the distribution would change.  See the poster for more information.
+<p><img src="images/sms/radius.jpg"><img src="images/sms/xystep.jpg">
+<br>The right plot is a histogram of distance the particles have moved from frame to frame.  This is an indicator of movement - bead samples (no movement) have a much higher peak around zero, while mobile samples show a distribution that tends off of zero.
+<br>The left plot is similar, howevr it is in the x and y directions.  This allows one to perform analysis for sample or image drift.  In this image, there is no drift as the mean lies on the origin.
+<p><img src="images/sms/random.jpg"><img src="images/sms/straight.jpg">
+<br>On the left is an image of a randomly travelling particle, one can see that it stays mainly in a 1-2 pixel radius, and has no preferred direction.
+<br>This trajectory is from a molecule that could be a nanocar - it has a larger movement magnitude (a few pixels) and is oriented along a preferential direction.
+<p>Revision history;
+<br>Version 1.0 - Working molecule identification, partially functional diffusion calculator
+    </div>
+    <div class="photobar">
+        <img class="photo" src="images/portrait.jpg" width="400px"></img>
+    </div>
+    <div class="contactbar">
+<ul class="contact-list">
+    <li><a href="http://www.duke.edu/"><img src="images/connect/duke_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.aps.org/"><img src="images/connect/aps_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.rice.edu/"><img src="images/connect/rice_blue.gif" width="50"/></a></li>
+    <li><a href="https://github.com/KEClaytor"><img src="images/connect/git_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.linkedin.com/in/kevinclaytor"><img src="images/connect/linkedin_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.twitter.com/keclaytor"><img src="images/connect/twitter_blue.gif" width="50"/></a></li>
+    <li><a href="https://plus.google.com/+KevinClaytor/posts"><img src="images/connect/gplus_blue.gif" width="50"/></a></li>
+</ul>
+    </div>
+</div>
+</body>
+</html>

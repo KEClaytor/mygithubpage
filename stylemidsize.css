@@ -1,0 +1,39 @@
+/* Midsize style sheet overrides */
+
+/* Main div sections */
+
+.banner {
+    position: fixed;
+}
+
+.content {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    right: 10%;
+}
+
+/* Hide the photobar on small screens */
+.photobar {
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* Move the contacts into nav */
+.contactbar {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 200px;
+}
+
+/* Navigation List Setup */
+.navbar {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    min-width: 200px;
+    width: auto;
+    bottom: 0px;
+}

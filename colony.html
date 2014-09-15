@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<!-- Prep for mobile devices --!>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load the stylesheet --!>
+<link rel="stylesheet" type="text/css" href="stylebase.css" />
+<!-- Stylesheet for mobile devicse --!>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1025px)" href="stylefullsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 1024px)" href="stylemidsize.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="stylemobile.css" />
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 480px) and (max-device-width: 480px)" href="stylemobile.css" />
+<!-- Google font sheet --!>
+<link href='http://fonts.googleapis.com/css?family=Exo+2:400,300,200' rel='stylesheet' type='text/css'>
+
+<!-- Metadata --!>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>Kevin Claytor</title>
+<meta name="author" content="Kevin Claytor">
+<meta name="keywords" content="kevin, claytor, programs, matlab, program, download, tracking, nanocar, cell, colony, counting">
+<meta name="description" content="Kevin Claytor's academic webpage with research, publications, software, and outreach.">
+<meta name="robots" content="all">
+</head>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-6966263-2");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- Google Analytics -->
+
+<body>
+<div class="wrapper">
+    <div class="banner">
+<h1 class="in-page-title">Kevin Claytor: colony</h1>
+<h1 class="in-page-title-basic">Kevin Claytor</h1>
+    </div>
+    <div class="navbar">
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="programs.html">Programs/Code</a></li>
+    <ul class="navsub">
+        <li><a href="python.html">Python</a></li>
+        <li><a href="mathematica.html">Mathematica</a></li>
+        <li><a href="matlab.html">Matlab</a></li>
+        <ul class="navsubsub">
+            <li><a href="colony.html">Colony Counter</a></li>
+            <li><a href="sms.html">Single Molecule</a></li>
+            <li><a href="pmspace.html">PM Space Sim</a></li>
+            <li><a href="sudoku.html">Sudoku Solver</a></li>
+            <li><a href="othello.html">Othello</a></li>
+            <li><a href="connect.html">Connect Four</a></li>
+            <li><a href="mtpe.html">MTPE Warp</a></li>
+        </ul>
+    </ul>
+    <li><a href="outreach.html">Outreach</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li><a href="docs/ClaytorCV.pdf" target="_blank">CV/Resume</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+    </div>
+    <div class="content">
+<p><center><h2>Colony Counter</h2></center></p><hr>
+<p/>
+<p><b>Introduction and Download</b>
+<br> This is a program that I wrote for my REU in the summer of 2008 at the <a href="http://illinois.edu/"><font class="lightbg"">University of Illinois at Urbana Champaign</font></a> for <a href="http://www.physics.uiuc.edu/people/golding/"><font class="lightbg"">Prof. Ido Golding</font></a>.  It interfaces with a webcam attached to the computer, uses it to capture an image of a bacterial plate and counts the number of colonies on the dish. <br>
+<p><a href="mcrdownload.html">MCR Installer</a> - The MATLAB component runtime that must be installed <b>before</b> running the program installer.
+<br><a href="exe/Counter_pkg.exe"><font class="lightbg"">Counter_pkg</font></a> - Standalone executable (windows only) <br>
+<a href="mfiles/colony.zip"><font class="lightbg"">Matlab code</font></a> - .zip of m files <br>
+<br>
+<b>Installation</b>
+<br>If the Matlab Runtime has not been installed download and install the Matlab runtime file. Then download the counter_pkg.exe program and run it. This will create counter.exe which is the standalone application. Alternatively you can download the Matlab files in a .zip package and run from the Matlab command prompt. </p>
+<p><b>Documentation and References</b>
+<br>
+<a href="docs/Claytor_Counter_Paper_2008.pdf" target="_blank">Final Report</a> - This documents the successes and failures of the counter software and hardware. It also contains all references used <br>
+<a href="docs/Counter_Manual.pdf" target="_blank">Manual and Documentation</a> - Documentation for the software as well as the hardware used in this project. <br>
+<a href="http://www.cellprofiler.org/" target="_blank">Cell Profiler</a> - A useful (and free) versitile image processing tool for Biological image analysis. It has a sharp learning code, however, you may find it useful. The code here was developed independently of this project. </p>
+<p><b>Screenshots</b>
+<br>
+<img src="images/colony/cameraexpt.jpg"> <br> The main program that may be used to capture and analyze images. <br>
+<img src="images/colony/cameraaq.jpg"> <br> The program that interfaces to the camera and aquires the image. <br>
+<img src="images/colony/camerastats.jpg"> <br> Another program that can be launched for applying cutoffs to the parameters and calculating intensity values. <br>
+<img src="images/colony/counted.jpg"> <br> The output image of the program. Also output is an exel file containing most of the parameters of each spot (size, eccentricity, etc.). <br>
+<br>
+<img src="images/colony/setup.jpg"> <br> A picture of the hardware setup showing the light box with webcam attachment, the source of backlighting and the removable diffuser. <br>
+<br>
+<img src="images/colony/deviation1.jpg"> <br>
+<img src="images/colony/deviation2.jpg"> <br> Deviation between automated counting and hand counting for several samples. </p>
+    </div>
+    <div class="photobar">
+        <img class="photo" src="images/portrait.jpg" width="400px"></img>
+    </div>
+    <div class="contactbar">
+<ul class="contact-list">
+    <li><a href="http://www.duke.edu/"><img src="images/connect/duke_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.aps.org/"><img src="images/connect/aps_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.rice.edu/"><img src="images/connect/rice_blue.gif" width="50"/></a></li>
+    <li><a href="https://github.com/KEClaytor"><img src="images/connect/git_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.linkedin.com/in/kevinclaytor"><img src="images/connect/linkedin_blue.gif" width="50"/></a></li>
+    <li><a href="http://www.twitter.com/keclaytor"><img src="images/connect/twitter_blue.gif" width="50"/></a></li>
+    <li><a href="https://plus.google.com/+KevinClaytor/posts"><img src="images/connect/gplus_blue.gif" width="50"/></a></li>
+</ul>
+    </div>
+</div>
+</body>
+</html>
